@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
 
         // Создаем вектор движения
         Vector3 movement = new Vector3(0.0f, 0.0f, moveVertical);
+        movement = transform.TransformDirection(movement);
 
         // Перемещение
         rb.velocity = movement * moveSpeed;
