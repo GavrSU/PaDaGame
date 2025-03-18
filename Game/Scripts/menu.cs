@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class menu : MonoBehaviour
 {
     public GameObject menulevels;
+    public GameObject menusetings;
     public void playbutonup()
     {
         menulevels.SetActive(true);
@@ -13,6 +14,10 @@ public class menu : MonoBehaviour
     public void eixtbutonup()
     {
         menulevels.SetActive(false); 
+    }
+        public void nastroykibutonup()
+    {
+        menusetings.SetActive(false); 
     }
 
     public void level1butonup()
