@@ -26,7 +26,6 @@ public class EnemyShooting : MonoBehaviour
         if (player == null) return;
       // Отсчитываем время до следующего выстрелa
         timeSinceLastShot += Time.deltaTime;
-        Debug.Log(timeSinceLastShot);
         if (timeSinceLastShot >= fireRate)
         {
             Shoot();
