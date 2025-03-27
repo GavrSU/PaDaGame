@@ -22,11 +22,5 @@ public class Shooting : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
-        Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            rb.velocity = spawnPoint.forward * bulletSpeed;
-        }
-        Destroy(bullet, 3f);
     }
 }

@@ -38,11 +38,5 @@ public class EnemyShooting : MonoBehaviour
         // Создаем пулю в точке выстрела
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
 
-        // Получаем компонент Rigidbody пули и задаем скорость
-        Rigidbody rb = bullet.GetComponent<Rigidbody>();
-        if (rb != null)
-        {
-            rb.velocity = firePoint.right * bulletSpeed;
-        }
     }
 }

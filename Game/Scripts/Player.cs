@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Application.targetFrameRate = 60;
         if (rb == null)
         {
             Debug.LogError("Rigidbody не найден! Добавьте компонент Rigidbody объекту.");
