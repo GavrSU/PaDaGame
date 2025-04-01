@@ -9,16 +9,23 @@ public class Health : MonoBehaviour
     public float MaxHp=100;
 
 
-    void PlusHp(float PlHp){
+    public void PlusHp(float PlHp){
         CurrentHp=CurrentHp+PlHp;
         if(CurrentHp>MaxHp){
             CurrentHp=MaxHp;
         }
+        UpdateHealthBar();
     }
-    void MinusHp(float MinHp){
+    public void MinusHp(float MinHp){
         CurrentHp=CurrentHp-MinHp;
         if(CurrentHp<0){
             CurrentHp=0;
+        }
+        UpdateHealthBar();
+    }
+    void UpdateHealthBar(){
+        if(gameObject.GetComponent<HealthBar>()!=null){
+            gameObject.GetComponent<HealthBar>().UpdateHealthBar();
         }
     }
     void Start()
