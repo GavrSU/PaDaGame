@@ -27,6 +27,9 @@ public class Health : MonoBehaviour
         if(gameObject.GetComponent<HealthBar>()!=null){
             gameObject.GetComponent<HealthBar>().UpdateHealthBar();
         }
+         if(gameObject.GetComponent<enemyHpBar>()!=null){
+            gameObject.GetComponent<enemyHpBar>().UpdateHealthBar();
+        }
     }
     void Start()
     {
