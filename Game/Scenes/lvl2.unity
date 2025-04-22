@@ -6869,14 +6869,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube (64)
       objectReference: {fileID: 0}
-    - target: {fileID: 2633790800417913321, guid: 685c1fb5ec3e8c44b98ece8734f9bdb4, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 6735339338622757668, guid: 685c1fb5ec3e8c44b98ece8734f9bdb4, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7317852125078481801, guid: 685c1fb5ec3e8c44b98ece8734f9bdb4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 43.784897
@@ -14984,17 +14976,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1280663423150241461, guid: e149f8a592964fe409f13ce432f857e9, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4422500838662416682, guid: e149f8a592964fe409f13ce432f857e9, type: 3}
       propertyPath: m_Name
       value: Cube (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4422500838662416682, guid: e149f8a592964fe409f13ce432f857e9, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
