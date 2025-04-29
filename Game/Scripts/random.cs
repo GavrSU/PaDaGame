@@ -3,25 +3,24 @@ using UnityEngine;
 public class RandomMaterialCube : MonoBehaviour
 {
     // Массив материалов, которые будут использоваться
-    public Material[] materials;
+    public GameObject[] prefabs;
 
     void Start()
-    {
-        // Получаем компонент Renderer у куба
-        Renderer cubeRenderer = GetComponent<Renderer>();
+    {       
+        // // Проверяем, что массив материалов не пустой
+         if (prefabs == null || prefabs.Length == 0)
+         {
+             Debug.LogError("Массив префабов пуст! Добавьте префабы в инспекторе.");
+             return;
+         }
 
-        // Проверяем, что массив материалов не пустой
-        if (materials == null || materials.Length == 0)
-        {
-            Debug.LogError("Массив материалов пуст! Добавьте материалы в инспекторе.");
-            return;
-        }
+         // Выбираем случайный материал из массива
+         int randomIndex = Random.Range(0, prefabs.Length);
+         GameObject randomPrefabs = prefabs[randomIndex];
 
-        // Выбираем случайный материал из массива
-        int randomIndex = Random.Range(0, materials.Length);
-        Material randomMaterial = materials[randomIndex];
-
-        // Применяем выбранный материал к кубу
-        cubeRenderer.material = randomMaterial;
+        // // Применяем выбранный материал к кубу
+         //cubeRenderer.material = randomMaterial;
+         Instantiate(prefabs[randomIndex],transform.position,transform.rotation);
+         Destroy(gameObject);
     }
 }

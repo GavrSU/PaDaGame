@@ -11,15 +11,15 @@ GameObject:
   - component: {fileID: 7317852125078481801}
   - component: {fileID: 4518408022818712742}
   - component: {fileID: 3037083169900149347}
-  - component: {fileID: 2077489166764260875}
-  - component: {fileID: 5166542152224463563}
   - component: {fileID: 6735339338622757668}
+  - component: {fileID: -6025485899002026756}
+  - component: {fileID: 6339155817678165887}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 8
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &7317852125078481801
 Transform:
@@ -86,32 +86,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &2077489166764260875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2633790800417913321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b413dc58943bf3843a5f0cd8cc4244fb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5166542152224463563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2633790800417913321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54498fee91919e54f94e5f3a96ba5995, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentHp: 30
-  MaxHp: 30
 --- !u!65 &6735339338622757668
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -133,3 +107,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &-6025485899002026756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633790800417913321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54498fee91919e54f94e5f3a96ba5995, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentHp: 50
+  MaxHp: 50
+--- !u!114 &6339155817678165887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2633790800417913321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b413dc58943bf3843a5f0cd8cc4244fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
