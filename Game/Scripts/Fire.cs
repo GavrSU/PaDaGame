@@ -5,6 +5,7 @@ public class Shooting : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform spawnPoint;
     public float bulletSpeed = 40f;
+    public float XDamage=1;
     public float fireRate = 0.5f;
 
     private float nextFireTime = 0f;
@@ -22,5 +23,6 @@ public class Shooting : MonoBehaviour
     void Shoot()
     {
         GameObject bullet = Instantiate(bulletPrefab, spawnPoint.position, spawnPoint.rotation);
+        bullet.GetComponent<Bullet>().damage*=XDamage;
     }
 }
