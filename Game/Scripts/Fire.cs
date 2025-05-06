@@ -3,7 +3,7 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     public GameObject effectPrefab;
-    public GameObject bulletPrefab; // Префаб пули
+            public GameObject bulletPrefab; // Префаб пули
     public Transform spawnPoint; // Точка спавна пули
     public float bulletSpeed = 15f; // Скорость пули
     public float XDamage = 1; // Множитель урона
