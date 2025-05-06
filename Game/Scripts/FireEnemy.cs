@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class EnemyShooting : MonoBehaviour
 {
+    public GameObject effectPrefab;
     public GameObject bulletPrefab; // Префаб пули
     public Transform firePoint;     // Точка, откуда вылетает пуля
     public float fireRate = 1f;     // Частота стрельбы (в секундах)
@@ -30,6 +31,8 @@ public class EnemyShooting : MonoBehaviour
         {
             Shoot();
             timeSinceLastShot = 0f; //Сбрасываем таймер
+             GameObject Ef=Instantiate(effectPrefab, firePoint.position, firePoint.rotation);
+            Destroy(Ef,2f);
         }
     }
 
