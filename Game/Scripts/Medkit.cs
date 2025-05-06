@@ -12,6 +12,7 @@ public class Medkit : MonoBehaviour
             // Получаем компонент Health у игрока
             Health playerHealth = other.GetComponent<Health>();
 
+
             if (playerHealth != null)
             {
                 // Восстанавливаем здоровье
