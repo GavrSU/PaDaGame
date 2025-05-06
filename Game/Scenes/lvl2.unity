@@ -2043,6 +2043,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7275763104518867017, guid: 7ff504b54a5cd214196030771634d964, type: 3}
+      propertyPath: effectPrefab
+      value: 
+      objectReference: {fileID: 1742013225946848, guid: b3d8264aa7d2d824a8a503e45291ddf4, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
