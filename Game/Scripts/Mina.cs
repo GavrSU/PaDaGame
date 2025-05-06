@@ -9,7 +9,7 @@ public class MineExplosion : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // Проверяем, что объект, попавший в триггер, является целью
-        if (other.CompareTag("Player") || other.CompareTag("Enemy"))
+        if      (other.CompareTag("Player") || other.CompareTag("Enemy"))
         {
             Explode();
             Destroy(gameObject); // Уничтожаем мину после взрыва
