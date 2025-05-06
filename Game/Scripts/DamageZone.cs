@@ -10,7 +10,7 @@ public class DamageZone : MonoBehaviour
         // Проверяем, есть ли у объекта, который касается, компонент Health
         Health health = other.GetComponent<Health>();
 
-        if (health != null)  
+        if (health != null)   
         {
             // Наносим урон пропорционально времени (Time.deltaTime)
             health.MinusHp(damagePerSecond * Time.deltaTime);
