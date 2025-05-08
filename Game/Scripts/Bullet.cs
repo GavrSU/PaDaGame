@@ -20,7 +20,6 @@ public class Bullet : MonoBehaviour
     }
     void OnCollisionEnter (Collision collision)
     {
-        Debug.Log(collision.collider.tag);
         Destroy(gameObject);
         if(collision.collider.GetComponent<Health>()!=null){
             collision.collider.GetComponent<Health>().MinusHp(damage);

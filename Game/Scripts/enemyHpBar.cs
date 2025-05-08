@@ -25,7 +25,6 @@ public class enemyHpBar : MonoBehaviour
             maxHealth = gameObject.GetComponent<Health>().MaxHp;
             healthBar.value = currentHealth / maxHealth; // Устанавливаем значение слайдера
         }
-        Debug.Log("HP");
         
     }
 }

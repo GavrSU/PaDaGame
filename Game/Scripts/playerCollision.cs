@@ -14,7 +14,6 @@ public class PlayerCollisionHandler : MonoBehaviour
             health.MinusHp(damageOnCollision);
 
             // Дополнительные действия (например, эффекты или звуки)
-            Debug.Log($"Касание с {collision.gameObject.name}. Нанесено {damageOnCollision} урона.");
         }
     }
 
@@ -24,7 +23,6 @@ public class PlayerCollisionHandler : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             health.MinusHp(damageOnCollision);
-            Debug.Log($"Триггер активирован объектом {other.gameObject.name}. Нанесено {damageOnCollision} урона.");
         }
     }
 }
