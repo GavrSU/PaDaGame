@@ -3,7 +3,8 @@ using UnityEngine;
 public class Shooting : MonoBehaviour
 {
     public GameObject effectPrefab;
-            public GameObject bulletPrefab; // Префаб пули
+    public GameObject bulletPrefab; // Префаб пули
+    public AudioManager audioManager;
     public Transform spawnPoint; // Точка спавна пули
     public float bulletSpeed = 15f; // Скорость пули
     public float XDamage = 1; // Множитель урона
@@ -17,6 +18,7 @@ public class Shooting : MonoBehaviour
         if (Input.GetButton("Fire1") && Time.time >= nextFireTime)
         {
             Shoot();
+            audioManager.Play("Выстрел танка");
             nextFireTime = Time.time + fireRate; // Устанавливаем время следующего выстрела
         }
     }

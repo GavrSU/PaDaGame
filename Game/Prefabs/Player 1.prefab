@@ -157,15 +157,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: eac4788bf5538574182b877a8ed880e5, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.81935
+      value: -8.759582
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: eac4788bf5538574182b877a8ed880e5, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.25845337
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: eac4788bf5538574182b877a8ed880e5, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 2.877437
+      value: -17.252295
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: eac4788bf5538574182b877a8ed880e5, type: 3}
       propertyPath: m_LocalRotation.w
@@ -276,7 +276,7 @@ MonoBehaviour:
   spawnPoint: {fileID: 6206229599868680410}
   bulletSpeed: 20
   XDamage: 1
-  fireRate: 0.5
+  fireRate: 2.5
 --- !u!114 &119552206673430164
 MonoBehaviour:
   m_ObjectHideFlags: 0
