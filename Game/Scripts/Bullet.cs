@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    
+
     // Start is called before the first frame update
     public float damage = 25;
     public float velosity = 5;
@@ -21,10 +21,14 @@ public class Bullet : MonoBehaviour
     }
     void OnCollisionEnter(Collision collision)
     {
-        Destroy(gameObject);
         if (collision.collider.GetComponent<Health>() != null)
         {
             collision.collider.GetComponent<Health>().MinusHp(damage);
+            if (collision.collider.tag == "Player")
+            {
+                collision.collider.GetComponent<AudioManager>().Play("Попадание");
+            }
         }
+         Destroy(gameObject);
     }
 }
