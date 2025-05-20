@@ -15,7 +15,11 @@ public class menu : MonoBehaviour
     {
         menulevels.SetActive(false); 
     }
-        public void nastroykibutonup()
+    public void nastroykibutonup()
+    {
+        menusetings.SetActive(true); 
+    }
+    public void nastroykibutonexit()
     {
         menusetings.SetActive(false); 
     }

@@ -17,6 +17,7 @@ public class blokhp : MonoBehaviour
      if(health.CurrentHp == 0)
      {
         Destroy(gameObject);
+        NAWMSHEcontrol.instante.Updatesurfase();
      }
     }
 }
