@@ -41,7 +41,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3206028001696177414}
   - component: {fileID: 6320451802794720484}
-  - component: {fileID: 3595849355665774776}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -115,14 +114,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &3595849355665774776
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3952629999842424154}
-  m_Enabled: 1
 --- !u!1001 &1700833113391609343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -230,10 +221,19 @@ PrefabInstance:
       addedObject: {fileID: 8855479023138690158}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: eac4788bf5538574182b877a8ed880e5, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1295420953007585374}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: eac4788bf5538574182b877a8ed880e5, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 7406229818194199998}
     - targetCorrespondingSourceObject: {fileID: 100004, guid: eac4788bf5538574182b877a8ed880e5, type: 3}
       insertIndex: -1
+      addedObject: {fileID: 3285593634704560500}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: eac4788bf5538574182b877a8ed880e5, type: 3}
+      insertIndex: -1
       addedObject: {fileID: 4881008979070797427}
+    - targetCorrespondingSourceObject: {fileID: 100004, guid: eac4788bf5538574182b877a8ed880e5, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 248774002536682779}
   m_SourcePrefab: {fileID: 100100000, guid: eac4788bf5538574182b877a8ed880e5, type: 3}
 --- !u!4 &1700833113391476603 stripped
 Transform:
@@ -257,8 +257,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 05d50f3ab14f7ae45a1c2dec020e9134, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: 100
-  moveSpeed: 5
+  rotationSpeed: 85
+  moveSpeed: 3
 --- !u!114 &4822431145461684997
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -273,6 +273,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   effectPrefab: {fileID: 1742013225946848, guid: b3d8264aa7d2d824a8a503e45291ddf4, type: 3}
   bulletPrefab: {fileID: 4677009981346069537, guid: 610091942e1f8bc41900599eac1693c6, type: 3}
+  audioManager: {fileID: 3285593634704560500}
   spawnPoint: {fileID: 6206229599868680410}
   bulletSpeed: 20
   XDamage: 1
@@ -319,6 +320,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentHp: 100
   MaxHp: 100
+--- !u!114 &1295420953007585374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700833113391510363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e41df1cf6437aad42a1d160a5beb56cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  engineClip: {fileID: 8300000, guid: 102d7ba407d4cf0488d833faf42acdef, type: 3}
 --- !u!54 &7406229818194199998
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -346,6 +360,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 116
   m_CollisionDetection: 0
+--- !u!114 &3285593634704560500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700833113391510363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1398e225ad55b264cb6516796c9bf27b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: "\u0414\u0432\u0438\u0433\u0430\u0442\u0435\u043B\u044C"
+    clip: {fileID: 8300000, guid: 102d7ba407d4cf0488d833faf42acdef, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: "\u0417\u0432\u0443\u043A \u0432\u0437\u0440\u044B\u0432\u0430"
+    clip: {fileID: 8300000, guid: 0ad8b77359c1c3047a30dafbf041f6d6, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: "\u0412\u044B\u0441\u0442\u0440\u0435\u043B \u0442\u0430\u043D\u043A\u0430"
+    clip: {fileID: 8300000, guid: 759a9b2ba7cd97c458184439044a51df, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: "\u041F\u043E\u043F\u0430\u0434\u0430\u043D\u0438\u0435"
+    clip: {fileID: 8300000, guid: a1ed734a9a94a8b4dbf81c1c999d6b5b, type: 3}
+    loop: 0
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
 --- !u!65 &4881008979070797427
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -367,3 +418,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.9971213, y: 1.4491937, z: 2.9996128}
   m_Center: {x: 0.1735704, y: 0.74154663, z: -0.1936121}
+--- !u!81 &248774002536682779
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700833113391510363}
+  m_Enabled: 1
