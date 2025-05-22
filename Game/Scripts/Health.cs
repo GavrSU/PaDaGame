@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    public float CurrentHp=100;
+    public GameObject explosionEffectPrefab;
+    public float CurrentHp = 100;
     public float MaxHp=100;
 
 
@@ -18,8 +19,17 @@ public class Health : MonoBehaviour
     }
     public void MinusHp(float MinHp){
         CurrentHp=CurrentHp-MinHp;
-        if(CurrentHp<0){
-            CurrentHp=0;
+        if (CurrentHp < 0)
+        {
+            CurrentHp = 0;
+            if (transform.tag == "Enemy")
+            {
+                Destroy(gameObject);
+                if (explosionEffectPrefab != null)
+        {
+            Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
+        }
+            }
         }
         UpdateHealthBar();
     }
