@@ -5,14 +5,17 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
+    private AudioSource audioSource;
+    public AudioClip engineClip;
 
-void Awak()
-{
-    if (instance == null)
-        instance = this;
-    else
-        Destroy(gameObject);
-}
+
+    void Awak()
+    {
+        if (instance == null)
+            instance = this;
+        else
+            Destroy(gameObject);
+    }
     public Sound[] sounds;
     void Awake()
     {
@@ -34,24 +37,34 @@ void Awak()
     public void Play(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
-        if(s == null)
+        if (s == null)
         {
-            Debug.LogWarning("Sound"+name+" not found!");
+            Debug.LogWarning("Sound" + name + " not found!");
             return;
         }
-        if(s.source.isPlaying)
-        return;
+        if (s.source.isPlaying)
+            return;
         s.source.Play();
     }
     public void Pause(string name)
     {
         Sound s = Array.Find(sounds, sound => sound.name == name);
-        if(s == null)
+        if (s == null)
         {
-            Debug.LogWarning("sound"+name+"not found!");
+            Debug.LogWarning("sound" + name + "not found!");
             return;
         }
-        if(s.source.isPlaying)
-        s.source.Pause();
+        if (s.source.isPlaying)
+            s.source.Pause();
+    }
+    void Start()
+    {
+        audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.clip = engineClip;
+            audioSource.loop = true;
+            audioSource.playOnAwake = false;
+            audioSource.volume = 0.7f;
+
+            audioSource.Play();
     }
 }

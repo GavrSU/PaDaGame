@@ -409,6 +409,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 152103443}
+    - target: {fileID: 3285593634704560500, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
+      propertyPath: sounds.Array.data[0].loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
