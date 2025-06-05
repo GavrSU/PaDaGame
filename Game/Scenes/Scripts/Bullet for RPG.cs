@@ -23,6 +23,7 @@ public class BulletForRPG : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
+        Debug.Log(collision);
         
         Explode();
 
