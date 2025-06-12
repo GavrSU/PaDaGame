@@ -34,10 +34,6 @@ public class Shooting : MonoBehaviour
         // Если у пули есть Rigidbody, задаем скорость
         Rigidbody rb = bullet.GetComponent<Rigidbody>();
         GameObject Ef=Instantiate(effectPrefab, spawnPoint.position, spawnPoint.rotation);
-            Destroy(Ef,2f);
-        if (rb != null)
-        {
-            rb.velocity = spawnPoint.forward * bulletSpeed;
-        }
+        Destroy(Ef,2f);
     }
 }
