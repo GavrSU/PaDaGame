@@ -6744,7 +6744,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 11.810023
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6752,23 +6752,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.013792
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9998271
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.018596364
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6776,7 +6776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -2.131
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -6824,35 +6824,39 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6206229599868680410, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.19799976
+      value: 0.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 6206229599868680410, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.598
       objectReference: {fileID: 0}
     - target: {fileID: 6206229599868680410, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.5026731
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6206229599868680410, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.50267315
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6206229599868680410, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.49731255
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6206229599868680410, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.49731255
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6206229599868680410, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0.614
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6206229599868680410, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6206229599868680410, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 90
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
