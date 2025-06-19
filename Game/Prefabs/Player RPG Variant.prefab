@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 807026096458961715, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
+      propertyPath: moveSpeed
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 807026096458961715, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
+      propertyPath: rotationSpeed
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 1700833113391476603, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 18.9
@@ -53,13 +61,29 @@ PrefabInstance:
       value: Player RPG Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4822431145461684997, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
+      propertyPath: XDamage
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822431145461684997, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: fireRate
-      value: 3
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4822431145461684997, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
+      propertyPath: bulletSpeed
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 4822431145461684997, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
       propertyPath: bulletPrefab
       value: 
       objectReference: {fileID: 4747786586241356647, guid: 9608952fc19941641b7a181e3b9463c4, type: 3}
+    - target: {fileID: 8855479023138690158, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
+      propertyPath: MaxHp
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 8855479023138690158, guid: 7a5514879ba1efa42915b10b3b2ca1f3, type: 3}
+      propertyPath: CurrentHp
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
