@@ -7,6 +7,10 @@ public class levelenchenger : MonoBehaviour
     public string levelname;
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(levelname);
+        if (other.tag == "Player")
+        {
+            SceneManager.LoadScene(levelname);
+        }
+
     }
 }

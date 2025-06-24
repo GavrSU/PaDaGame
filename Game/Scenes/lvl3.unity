@@ -13140,6 +13140,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 2.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1580299306969546339, guid: fcaa3831456f7cf4e97b60319b0474f2, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 4002414896594454136}
     - target: {fileID: 2297386772552998344, guid: fcaa3831456f7cf4e97b60319b0474f2, type: 3}
       propertyPath: m_Name
       value: Player RPG Variant
@@ -23681,6 +23685,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1551adae764d58469eb7259d42803a1, type: 3}
+--- !u!114 &4002414896594454136 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9201687626085103232, guid: d1551adae764d58469eb7259d42803a1, type: 3}
+  m_PrefabInstance: {fileID: 4002414896594454135}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4698284301660932855
 PrefabInstance:
   m_ObjectHideFlags: 0

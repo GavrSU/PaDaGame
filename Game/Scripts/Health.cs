@@ -2,34 +2,39 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Health : MonoBehaviour
 {
     public GameObject explosionEffectPrefab;
     public float CurrentHp = 100;
-    public float MaxHp=100;
+    public float MaxHp = 100;
 
 
-    public void PlusHp(float PlHp){
-        CurrentHp=CurrentHp+PlHp;
-        if(CurrentHp>MaxHp){
-            CurrentHp=MaxHp;
+    public void PlusHp(float PlHp) {
+        CurrentHp = CurrentHp + PlHp;
+        if (CurrentHp > MaxHp) {
+            CurrentHp = MaxHp;
         }
         UpdateHealthBar();
     }
-    public void MinusHp(float MinHp){
-        CurrentHp=CurrentHp-MinHp;
-        if (CurrentHp < 0)
+    public void MinusHp(float MinHp) {
+        CurrentHp = CurrentHp - MinHp;
+        if (CurrentHp <= 0)
         {
             CurrentHp = 0;
             if (transform.tag == "Enemy")
             {
                 Destroy(gameObject);
                 if (explosionEffectPrefab != null)
-        {
-            Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
-        }
+                {
+                    Instantiate(explosionEffectPrefab, transform.position, Quaternion.identity);
+                }
             }
+            if (transform.tag == "Player")
+            {
+                SceneManager.LoadScene("menu");
+            }
+    
         }
         UpdateHealthBar();
     }

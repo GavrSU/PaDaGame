@@ -45,8 +45,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1881033332186922296}
-  - component: {fileID: 5695294735626347590}
-  - component: {fileID: 6075671008306080600}
   - component: {fileID: 9201687626085103232}
   m_Layer: 5
   m_Name: Slider
@@ -77,34 +75,6 @@ RectTransform:
   m_AnchoredPosition: {x: -449.5, y: -249.1}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5695294735626347590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915245660372826830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c99cef5eca3b3a4c8e0e262871d1651, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: {fileID: 0}
-  damageOnCollision: 10
---- !u!114 &6075671008306080600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1915245660372826830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6c3d4f89eab001a4997cd68088c9ca4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthBar: {fileID: 9201687626085103232}
-  maxHealth: 100
 --- !u!114 &9201687626085103232
 MonoBehaviour:
   m_ObjectHideFlags: 0
